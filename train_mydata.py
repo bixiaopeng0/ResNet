@@ -45,7 +45,7 @@ print(train_datasets,val_datasets)
 # --------------------训练过程---------------------------------
 
 #加载预训练模型，将不匹配的部分删掉
-net = resnet50(pretrained=True)
+net = resnet50(pretrained=False)
 model_dict = net.state_dict()
 state_dict  = torch.load('resnet50-19c8e357.pth')
 # 1. filter out unnecessary keys
