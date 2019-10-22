@@ -1,2 +1,10 @@
-# ResNet
-ResNet base on Pytorch 1.10 identify cat and dog
+- 数据集：猫狗，每一类3000张
+- 网络：ResNet50
+- 准确率：
+  - 没加预训练权重之前--75% -- 100epoch
+  - 加预训练权重--95%  -- 50epoch
+  - 从网上找了几张图片，单独测试了一下，还是挺准的。
+- 文件：
+  - train_mydata.py   训练代码，验证代码，每一个epoch验证一次
+  - myresnet.py  resnet网络，可以选择不同深度的网络
+
